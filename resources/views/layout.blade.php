@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Student Management System</title>
 
     <style>
         .sidebar {
@@ -102,7 +102,7 @@
                             <a href="{{url('/courses')}}">Courses</a>
                             <a href="{{url('/batches')}}">Batches</a>
                             <a href="{{url('/enrollments')}}">Enrollment</a>
-                            <a href="#about">Payment</a>
+                            <a href={{url('/payments')}}>Payment</a>
                         </div>
                     </div>
 
