@@ -3,7 +3,7 @@
 
     <div class="card">
         <div class="card-header">
-            <h2>Courses Application</h2>
+            <h2>Course Application</h2>
         </div>
         <div class="card-body">
             <a href="{{ url('/courses/create') }}" class="btn btn-success btn-sm" title="Add New Course">
@@ -19,7 +19,7 @@
                             <th>Name</th>
                             <th>Syllabus</th>
                             <th>Duration</th>
-                            <th>Actions</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -28,7 +28,7 @@
                                 <td>{{ $loop->iteration }}</td>
                                 <td>{{ $item->name }}</td>
                                 <td>{{ $item->syllabus }}</td>
-                                <td>{{ $item->duration }}</td>
+                                <td>{{ $item->duration() }}</td>
 
                                 <td>
                                     <a href="{{ url('/courses/' . $item->id) }}" title="View Course"><button
@@ -55,5 +55,7 @@
 
         </div>
     </div>
-
+    </div>
+    </div>
+    </div>
 @endsection
